@@ -4,10 +4,9 @@ using namespace std;
 int cuadrado(int value)
 {
   int total = 0;
-  for (1;value;1) // aqui creo que es el problema !!! 
+  for (int i = 1;i<=value;++i) //punto de corte y pasos !
   {
     total = total + value;
-    cout << total;
   }
   return total;
 }
