@@ -11,11 +11,11 @@ int main()
     {
       if(numa>numb)
       {
-        cout << "El numero" << numa  << "es meyor que "<<numb<< endl;
+        cout << "El numero" << numa  << "es mayor que "<<numb<< endl;
       }
       else if (numb<numa)
       {
-        cout << "El numero" << numb  << "es meyor que "<<numa<< endl;
+        cout << "El numero" << numb  << "es mayor que "<<numa<< endl;
       }
 
     }
