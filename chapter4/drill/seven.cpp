@@ -8,6 +8,9 @@ using namespace std;
 
 int main()
 {
+  const double cm_per_meter = 100,
+               inche_per_cm = 0.3734,
+               feet_per_cm = 0.0328;
   char case_conversion=' ';//Declarado para utilizar switch
   double quantity,
          total_cm = 0,
@@ -92,8 +95,19 @@ en su lugar correcto*/
 
 
   }
+  // Una vez hecho el corte del bucle se muestran los datos totales ingresados en su determinada variable
+  cout << "La cantidad total ingresada de metros fue " << total_m << endl;
+  cout << "La cantidad total ingresada de centimetros fue " << total_cm << endl;
+  cout << "La cantidad total ingresada de pulgadas fue " << total_inches << endl;
+  cout << "La cantidad total ingresada de pies fue " << total_ft << endl;
 
 
+  //Aqui hacemos la conversion de todas las cantidades a centimetros
+  total_cm = total_cm + total_m * cm_per_meter + total_inches/inche_per_cm +total_ft/feet_per_cm;
+  //Mostramos el resultado
+  cout << "En total tu tienes " << total_cm << " Centimetros" << endl;
 
   return 0;
+  /* Fin
+  */
 }
