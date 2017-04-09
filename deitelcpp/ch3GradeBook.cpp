@@ -12,6 +12,6 @@ public://Lo cual se tiene acceso
 
 int main()
 {
-  GradeBook myGradeBook;
-  myGradeBook.displayMessage();
+  GradeBook myGradeBook;//Crea el objeto GradeBook
+  myGradeBook.displayMessage();//Accede a una funcion del objeto que es displayMessage
 }
